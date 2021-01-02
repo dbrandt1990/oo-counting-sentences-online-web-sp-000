@@ -21,6 +21,7 @@ class String
       return 0
     else
       puts self.split(/[.?!]/).delete(" ")
+      puts temp
       temp = self.split(/[.?!]/).count
       return temp
     end

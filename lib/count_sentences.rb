@@ -20,9 +20,9 @@ class String
     if(!self.include?("."||"?"||"!"))
       return 0
     else
-      puts self.split(/[.?!]/
+      puts self.split(/[.?!]/).delete(" ")
       temp = self.split(/[.?!]/).count
-      binding.pry
+      return temp
     end
   end
 end
